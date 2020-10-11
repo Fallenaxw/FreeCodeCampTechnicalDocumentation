@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* Reset*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Utility */
+
+body {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: #4e5d53;
+  background-color: #eee;
+}
+
+/* Header */
+
+nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  border-right: 2px solid #333;
+}
+
+nav header {
+  margin: 10px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px 30px;
+  border-bottom: 1px solid #333;
+  line-height: 2rem;
+  text-align: left;
+}
+
+nav ul li:first-child {
+  border-top: 1px solid #333;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4e5d53;
+}
+
+/* Main Doc Area */
+
+.media {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+#main-doc {
+  margin-left: 350px;
+  margin-bottom: 250px;
+  padding: 20px;
+
+}
+
+.main-section header {
+  margin: 10px;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+article p {
+  margin: 1rem 0;
+}
+
+article ul {
+  margin-left: 40px;
+} 
+
+article ul li {
+  margin: 15px 0 0 20px;
+}
+
+pre {
+  background-color: #fff;
+}
+
+.dot {
+  list-style: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    display: 1;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #main-doc {
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+}
+  
